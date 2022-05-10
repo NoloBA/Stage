@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stage.MainPage" BackgroundColor="#9F2B68">
+
+    <StackLayout>
+        <Image Source="Twitch.png"></Image>
+        <Frame BackgroundColor="Purple" Padding="24" CornerRadius="15">
+            <Label Text="Howdy, Twitcher!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Start streaming now!" FontSize="Title" Padding="30,10,30,10" TextColor="MediumPurple"/>
+        <Label Text="Are you an avid gamer? Tech Enthusiast? You just love the art of streaming, anything? Just human? We have something for you!"
+               FontSize="16" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Image Source="Gamer.jpg"></Image>
+    </StackLayout>
+
+</ContentPage>
