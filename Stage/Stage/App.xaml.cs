@@ -12,7 +12,7 @@ namespace Stage
 
             //MainPage = new MainPage();
             //MainPage = new MainPage();
-            var navigationPage = new NavigationPage(new MainPage());  
+            var navigationPage = new NavigationPage(new SplashScreen()); 
             //var can be removed here
             navigationPage.BarBackgroundColor = Color.Purple;
 

@@ -10,22 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace Stage
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Signup : ContentPage
+    public partial class SplashScreen : ContentPage
     {
-        public Signup()
+        public SplashScreen()
         {
             InitializeComponent();
         }
 
+            protected async override void OnAppearing()
+            {
+                base.OnAppearing();
 
-        private async void Button_Clicked_1(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MainPage());
-        }
+                await Task.Delay(6000);
 
-        private void Button_Clicked_2(object sender, EventArgs e)
-        {
-
-        }
+                await Navigation.PushAsync(new MainPage());
+            }
+   
     }
 }

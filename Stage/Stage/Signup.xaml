@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Stage.Signup" BackgroundColor="#9F2B68" Title="Sign-Up">
+             x:Class="Stage.Signup" BackgroundColor="Purple" Title="Sign-Up">
     <ContentPage.Content>
-        
-        
+
+
         <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
-            <Image Source="Twitch.png"></Image>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout>
                 <Entry Placeholder="First Name"></Entry>
                 <Entry Placeholder="Last Name"></Entry>
                 <Entry Placeholder="UserName"></Entry>
@@ -22,7 +21,7 @@
                 <Switch IsToggled="False"></Switch>
             </StackLayout>
             <Button Text="Sign Up"></Button>
-            <Label Text="Already have account? Sign" TextColor="MediumPurple"></Label>
+            <Button Text="Already have account? Sign" TextColor="MediumPurple" Clicked="Button_Clicked_1" ></Button>
         </StackLayout>                                                                                                                
     </ContentPage.Content>
 </ContentPage>

@@ -4,24 +4,41 @@
              x:Class="Stage.MainPage" BackgroundColor="Purple" Title="Home-Page">
 
     <NavigationPage.TitleView>
-        <!--Label Text="Twitch" HorizontalOptions="CenterAndExpand" BackgroundColor="Purple" ></Label-->
-        <Image Source="Twitch.png"></Image>
+        <Label Text="Twitch" HorizontalOptions="CenterAndExpand" BackgroundColor="Purple" ></Label>
+        
     </NavigationPage.TitleView>
 
-    <StackLayout>
+    <StackLayout Margin="20">
         <!--Image Source="Twitch.png"></Image-->
-        <Frame BackgroundColor="Purple" Padding="24" CornerRadius="15">
-            <Label Text="Howdy, Twitcher!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Button x:Name="SignUpButton" Text="Start streaming now!" TextColor="MediumPurple" Clicked="SignUpButton_Clicked"/>
-        <Label Text="Are you an avid gamer? Tech Enthusiast? You just love the art of streaming, anything? Just human? We have something for you!"
-               FontSize="16" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Image Source="Gamer.jpg"></Image>
-        <StackLayout>
-            <Frame>
-                <Entry Placeholder="First Name"></Entry>
-            </Frame>
-        </StackLayout>
+        
+       
+        
+        <Label Text="Games" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Music" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Talk Show" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Sports" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Travel" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Are you an avid gamer" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Are you an avid gamer" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Are you an avid gamer" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Are you an avid gamer" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="There's" FontSize="35" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Something for" FontSize="35" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="you on Twitch" FontSize="35" Padding="30,0,30,0" FontAttributes="Bold"/>
+        
+
+            <Grid VerticalOptions="EndAndExpand" Margin="0,0,0,50">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Log In" BackgroundColor="#BF40BF" Grid.Column="0"></Button>
+            <Button Text="Sign Up" BackgroundColor="White" Grid.Column="1" Clicked="SignUpButton_Clicked" ></Button>
+
+        </Grid>
+
     </StackLayout>
 
 </ContentPage>
