@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Stage.Signup" BackgroundColor="#9F2B68">
+             x:Class="Stage.Signup" BackgroundColor="#9F2B68" Title="Sign-Up">
     <ContentPage.Content>
+        
+        
         <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <Image Source="Twitch.png"></Image>
             <StackLayout Orientation="Horizontal">
                 <Entry Placeholder="First Name"></Entry>
                 <Entry Placeholder="Last Name"></Entry>

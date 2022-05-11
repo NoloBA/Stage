@@ -11,7 +11,12 @@ namespace Stage
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new Signup();
+            //MainPage = new MainPage();
+            var navigationPage = new NavigationPage(new MainPage());  
+            //var can be removed here
+            navigationPage.BarBackgroundColor = Color.Purple;
+
+            MainPage = navigationPage;
         }
 
         protected override void OnStart()

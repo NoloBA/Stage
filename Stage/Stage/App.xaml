@@ -4,5 +4,11 @@
              x:Class="Stage.App">
     <Application.Resources>
 
+        <!--Style x:Key="labelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="50"/>
+            <Setter Property="FontAttributes" Value="Italic"/>
+        </Style-->
+        
     </Application.Resources>
+
 </Application>
