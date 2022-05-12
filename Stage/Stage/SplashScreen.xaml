@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Stage.SplashScreen">
+             x:Class="Stage.SplashScreen" BackgroundColor="MediumPurple"
+             >
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Games" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
-            <Image Source="Twitch.png"/>
+           <!-- <TextBlock>
+                
+            </TextBlock>-->
+            <Label Text="Howdy, Twitcher!" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold" VerticalOptions="CenterAndExpand"/>
+            <!--Image Source="Transparent.png"/-->
+            <ActivityIndicator IsRunning="True" Color="Black" Margin="0,0,0,300"/>
 
         </StackLayout>
     </ContentPage.Content>

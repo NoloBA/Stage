@@ -1,11 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Stage.MainPage" BackgroundColor="Purple" Title="Home-Page">
+             x:Class="Stage.MainPage" BackgroundColor="MediumPurple" Title="HomePage">
 
     <NavigationPage.TitleView>
-        <Label Text="Twitch" HorizontalOptions="CenterAndExpand" BackgroundColor="Purple" ></Label>
-        
+        <Grid HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+
+            </Grid.ColumnDefinitions>
+            <Image Source="Twitch.png" HeightRequest="50" Aspect="AspectFit" Grid.Column="1" HorizontalOptions="Start"/>
+
+        </Grid>
     </NavigationPage.TitleView>
 
     <StackLayout Margin="20">
@@ -15,16 +26,15 @@
         
         <Label Text="Games" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
         <Label Text="Music" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Label Text="Talk Show" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
         <Label Text="Sports" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Label Text="Travel" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Label Text="Are you an avid gamer" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Label Text="Are you an avid gamer" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Label Text="Are you an avid gamer" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Label Text="Are you an avid gamer" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Label Text="There's" FontSize="35" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Label Text="Something for" FontSize="35" Padding="30,0,30,0" FontAttributes="Bold"/>
-        <Label Text="you on Twitch" FontSize="35" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Talk Shows" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Just Chatting" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Food and Drink" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Special Events" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="Travel and Outdoors" TextColor="White" FontSize="25" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="There's" FontSize="35" Padding="30,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+        <Label Text="Something for" FontSize="35" Padding="30,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+        <Label Text="you on Twitch" FontSize="35" Padding="30,0,30,0" FontAttributes="Bold" TextColor="Black"/>
         
 
             <Grid VerticalOptions="EndAndExpand" Margin="0,0,0,50">
@@ -34,7 +44,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Text="Log In" BackgroundColor="#BF40BF" Grid.Column="0"></Button>
+            <Button Text="Log In" BackgroundColor="#815fc0" Grid.Column="0" Clicked="Button_Clicked"></Button>
             <Button Text="Sign Up" BackgroundColor="White" Grid.Column="1" Clicked="SignUpButton_Clicked" ></Button>
 
         </Grid>

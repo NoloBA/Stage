@@ -10,22 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace Stage
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Signup : ContentPage
+    public partial class LoginPage : ContentPage
     {
-        public Signup()
+        public LoginPage()
         {
             InitializeComponent();
         }
 
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+           await Navigation.PushAsync(new LoginPage());
+        }
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
-        }
-
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new LoginPage());
+            await Navigation.PushAsync(new HelpMeLogin());
         }
     }
 }

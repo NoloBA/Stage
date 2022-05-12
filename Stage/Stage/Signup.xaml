@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Stage.Signup" BackgroundColor="Purple" Title="Sign-Up">
+             x:Class="Stage.Signup" BackgroundColor="MediumPurple" Title="Sign-Up">
     <ContentPage.Content>
 
 
@@ -18,10 +18,10 @@
             <DatePicker></DatePicker>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Save Password"></Label>
-                <Switch IsToggled="False"></Switch>
+                <Switch IsToggled="False" OnColor="#9146FF" ThumbColor="#9146FF"></Switch>
             </StackLayout>
-            <Button Text="Sign Up"></Button>
-            <Button Text="Already have account? Sign" TextColor="MediumPurple" Clicked="Button_Clicked_1" ></Button>
+            <Button Text="Sign Up" Clicked="Button_Clicked"></Button>
+            <Button Text="Already have account? Login" TextColor="MediumPurple" Clicked="Button_Clicked_1" ></Button>
         </StackLayout>                                                                                                                
     </ContentPage.Content>
 </ContentPage>

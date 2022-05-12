@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stage.LoginPage" BackgroundColor="White" Title="Log In">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Username" Margin="20,70,0,0" FontAttributes="Bold" TextColor="Black" FontSize="17"/>
+                <Frame OutlineColor="MediumPurple"
+                       BackgroundColor="White"
+                       CornerRadius="7"
+                       HasShadow="True"
+                       Margin="20,0,20,0"
+                       Padding="0">
+                    <Entry Placeholder="username"/>
+                </Frame>
+                <Label Text="Password" Margin="20,10,0,0" FontAttributes="Bold" TextColor="Black" FontSize="17"/>
+                <Frame OutlineColor="MediumPurple"
+                       BorderColor="MediumPurple"
+                       BackgroundColor="White"
+                       CornerRadius="7"
+                       Margin="20,0,20,0"
+                       Padding="0">
+                    <Entry Placeholder="Password" IsPassword="True"/>
+                </Frame>
+
+            </StackLayout>
+            <Button Text="Trouble logging in?" TextColor="MediumPurple" Margin="20,20,20,0" BackgroundColor="White" HorizontalOptions="Start" Clicked="Button_Clicked_1"/>
+            <Button Margin="20,0"
+                    CornerRadius="7"
+                    Text="Log In"
+                    TextColor="White"
+                    BackgroundColor="MediumPurple"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
